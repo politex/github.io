@@ -1,9 +1,19 @@
 <html>
 <body>
  <p id="demo">
-  Deeper..
+   <input type="text" id="textbox">
+   <button onclick="myFunction()">Go</button><br>
+
+<script>
+function myFunction() {
+    var input = document.getElementById("textbox");
+    var output = document.getElementById("outbox");
+    output.setAttribute("src", input.value);
+}
+</script>
+
   </script>
-  <iframe width="99%" height="80%" src="https://www.pos.com.my/postal-services/quick-access/?track-trace"></iframe>
+  <iframe id="outbox" width="99%" height="80%" src="https://www.pos.com.my/postal-services/quick-access/?track-trace"></iframe>
   </p>
 </body>
 </html>
